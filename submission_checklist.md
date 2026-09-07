@@ -52,4 +52,4 @@ Use this checklist before submitting your weekly discussion.
 
 ### Discussion Items Awaiting Submission
 
-The repository link, design explanation, and reflection were prepared in `discussion_post.md`; preparation did not mark the LEO posting items complete. Two classmates' posts or repositories were still needed to write specific comparisons. For each response, the remaining work included comparing implementation choices, examining actual edge-case behavior, and suggesting a concrete efficiency, robustness, or usability improvement. No peer responses or LEO submissions were claimed as completed.
+The repository link, design explanation, and reflection were prepared separately for copying to the discussion board; preparation did not mark the LEO posting items complete. Two classmates' posts or repositories were still needed to write specific comparisons. For each response, the remaining work included comparing implementation choices, examining actual edge-case behavior, and suggesting a concrete efficiency, robustness, or usability improvement. No peer responses or LEO submissions were claimed as completed.
