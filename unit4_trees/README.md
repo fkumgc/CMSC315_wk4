@@ -1,4 +1,4 @@
-# Unit 4 Discussion: Binary Search Trees
+# Unit 4: Binary Search Trees
 
 ## Overview
 
@@ -78,25 +78,3 @@ array supported O(log n) binary search but could require O(n) insertion shifts.
 A hash table supported expected O(1) lookup without automatically maintaining
 sorted keys. The BST combined dynamic insertion and ordered output, with
 performance determined by its shape.
-
-## Discussion Board Reflection
-
-After completing the programming assignment, add this reflection to your initial discussion post in LEO.
-
-Your reflection should be approximately 150–200 words and address the following questions:
-
-1. What concepts or skills did you learn while completing this assignment?
-2. What challenges did you encounter, and how did you overcome them?
-3. Explain BST behavior and compare to how ordering works to create efficiency as compared to other data structures.
-
-An employee-ID index was implemented using a binary search tree (BST). Each node stored one unique ID and references to at most two children. Recursive insertion placed smaller IDs in the left subtree and larger IDs in the right subtree, while duplicate IDs were ignored. In-order traversal visited left, current, then right, producing a sorted employee directory (Vashishtha, 2025).
-
-The implementation demonstrated how recursive base cases connected insertion, searching, and traversal. One challenge involved preserving child references when recursive insertion returned a new node. Assigning each returned subtree to its parent's left or right reference resolved this issue. Tests covered empty trees, single nodes, missing IDs, duplicates, and invalid inputs.
-
-The demonstration inserted the same 15 IDs in two orders. Searching for the largest ID visited four nodes in the balanced example and 15 in the sequential example. Balanced BST searches took O(log n), compared with O(n) linear searches. However, sorted insertion produced a chain and reduced search efficiency to O(n), illustrating the importance of tree height (Mateen, 2025). A sorted array also supported O(log n) binary search, but insertion could require shifting elements. An AVL tree would help preserve efficiency as employee records grew.
-
-## References
-
-Mateen, A. (2025, April 8). *Binary search tree—An efficient data structure*. Medium. https://medium.com/@amateen_74225/binary-search-tree-an-efficient-data-structure-36cb7b7a2d4b
-
-Vashishtha, A. (2025, July 31). *Binary search trees (BST): A complete learning guide*. Medium. https://medium.com/@anandvashishtha/binary-search-trees-bst-a-complete-learning-guide-c97aa49ebc28
