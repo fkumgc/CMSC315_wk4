@@ -1,0 +1,42 @@
+=== UNIT 4: BINARY SEARCH TREES ===
+
+=== TREE CONSTRUCTION ===
+Employee IDs inserted: [1050, 1025, 1075, 1010, 1035, 1060, 1090, 1001, 1015, 1030, 1040, 1055, 1065, 1080, 1095]
+Smaller IDs went left; larger IDs went right from each node.
+
+=== IN-ORDER TRAVERSAL ===
+Employee IDs in ascending order: [1001, 1010, 1015, 1025, 1030, 1035, 1040, 1050, 1055, 1060, 1065, 1075, 1080, 1090, 1095]
+Left -> current -> right produced a sorted employee-ID report.
+
+=== SEARCH TESTS ===
+Search 1050: Found
+Search 1025: Found
+Search 1001: Found
+Search 1095: Found
+Search 1042: Not found
+Search 999: Not found
+Search 1100: Not found
+
+=== EDGE CASES ===
+Empty traversal: [] (expected [])
+Empty search: False (expected False)
+Single-node tree: [1050] Found: True
+Duplicate 1050 ignored: True
+insert('1050') rejected: Employee ID must be an integer (not a boolean).
+search('1050') rejected: Employee ID must be an integer (not a boolean).
+insert(None) rejected: Employee ID must be an integer (not a boolean).
+search(None) rejected: Employee ID must be an integer (not a boolean).
+insert(True) rejected: Employee ID must be an integer (not a boolean).
+search(True) rejected: Employee ID must be an integer (not a boolean).
+insert(1050.5) rejected: Employee ID must be an integer (not a boolean).
+search(1050.5) rejected: Employee ID must be an integer (not a boolean).
+insert(0) rejected: Employee ID must be positive.
+search(0) rejected: Employee ID must be positive.
+insert(-1) rejected: Employee ID must be positive.
+search(-1) rejected: Employee ID must be positive.
+
+=== INSERTION ORDER AND PERFORMANCE ===
+Same sorted IDs: True
+Middle-first: search 1095 visited 4 nodes.
+Sequential: search 1095 visited 15 nodes.
+Balanced paths took 4 comparisons; sequential insertion took 15.
